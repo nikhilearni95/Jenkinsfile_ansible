@@ -1,11 +1,11 @@
-pipeline{
+pipeline {
     agent any
+
     stages {
-        stage('Run Playbook') {
+                stage('Run Playbook') {
             steps {
-                ansiblePlaybook credentialsId: 'private-key1', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'play1.yml'
+                ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev1.inv', playbook: 'apache2.yml'
             }
         }
-        
-     }
+    }
 }
