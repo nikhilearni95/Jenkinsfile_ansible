@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  tasks:
+  - name: Creating an empty file
+    file:
+      path: /root/nikhil/deploy.txt
+      state: touch
+...
+
