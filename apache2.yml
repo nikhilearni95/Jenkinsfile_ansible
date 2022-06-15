@@ -2,9 +2,9 @@
 - hosts: webservers
   tasks:
   become: yes
-  - name: Creating an empty file
-    file:
-      path: /root/nikhil/deploy.txt
-      state: touch
+    - name: Creating an empty file
+      file:
+        path: /root/nikhil/deploy.txt
+        state: touch
 ...
 
