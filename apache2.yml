@@ -1,8 +1,8 @@
 ---
 - hosts: webservers
   tasks:
+  become: yes
   - name: Creating an empty file
-    sudo: yes
     file:
       path: /root/nikhil/deploy.txt
       state: touch
