@@ -1,6 +1,7 @@
 ---
 - hosts: webservers
   tasks:
+  sudo: yes
   - name: Creating an empty file
     file:
       path: /root/nikhil/deploy.txt
