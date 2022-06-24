@@ -5,5 +5,5 @@
   tasks:
   - name: Copy a file
     file: 
-      path: /home/nikhil.earni/test1/deploy.txt
+      path: /home/nikhil.earni/test/deploy.txt
       state: touch
